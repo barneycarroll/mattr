@@ -1,5 +1,7 @@
 # What's the mattr?
 
+[![Join the chat at https://gitter.im/barneycarroll/mattr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/barneycarroll/mattr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Mattr allows you to extend the Mithril view language with custom attributes.
 
 UMD compliant, so you can include as a raw script, require using Node or Browserify, or via RequireJS, SystemJS, etc.
