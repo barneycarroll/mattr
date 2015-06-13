@@ -1,5 +1,5 @@
 {
-  "name": "m.attrs",
+  "name": "mattr",
   "version": "0.0.1",
   "description": "Custom attributes to extend Mithril's view language",
   "main": "index.js",
