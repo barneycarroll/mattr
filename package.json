@@ -1,6 +1,6 @@
 {
   "name": "mattr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Custom attributes to extend Mithril's view language",
   "main": "index.js",
   "scripts": {
