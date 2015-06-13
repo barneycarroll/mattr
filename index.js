@@ -40,12 +40,17 @@
 	// Core public API: accepts a map of transformations,
 	// returns an enhanced mithril which processes them
 	function mattr( transformations ){
-		return assign( function(){
-			return transform(
-				m.apply( undefined, arguments ),
-				transformations
-			)
-		}, m )
+		transformations = transformations || {}
+
+		return assign(
+			function(){
+				return transform(
+					m.apply( undefined, arguments ),
+					transformations
+				)
+			}, m, {
+				attrs : transformations
+			} )
 	}
 
 	var attrs = {}
