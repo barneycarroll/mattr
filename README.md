@@ -12,7 +12,7 @@ UMD compliant, so you can include as a raw script, require using Node or Browser
 
 <!-- The point of custom attributes (more on this later) is to reduce boilerplate and make your Mithril application code leaner and more descriptive by abstracting common idioms into key / value pairs. So the recommended approach is to have a global map of custom attributes which can be assigned once and then used throughout your application. This approach means that you will use an extended version of Mithril provided by Mattr whose custom attributes are defined on the `attr` property of the extended Mithril object: -->
 
-### w/o modules / package management
+### Umodular, plain JS
 ```html
 <script src="/path/to/mithril.min.js"></script>
 <script src="/path/to/mattr.js"></script>
@@ -71,7 +71,7 @@ The default scenario for custom attributes is an application codebase where you 
 
 You can create a new extended Mithril with it's own set of custom attributes by using the core API function:
 
-```
+```javascript
 // Closures are used to demonstrate scope isolation
 ( function plugin(){
 	// Attributes can be passed in directly:
@@ -83,3 +83,4 @@ You can create a new extended Mithril with it's own set of custom attributes by 
 
 // Later, in the user's code...
 m.attrs.bidi = usersOwnBidiPlugin
+```
